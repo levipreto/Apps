@@ -1,4 +1,5 @@
 // WORK IN PROGRESS
+package Misc;
 
 public class PrimeNumber {
    

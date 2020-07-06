@@ -4,6 +4,19 @@ public class MotorBike {
     // state
     private int speed;
 
+    // constructors
+
+    MotorBike () {
+    //    this(5);
+    // this sets the constructor default value to 5 when not assigned.
+    }
+
+    MotorBike(int speed) {
+        this.speed = speed;
+    }
+
+    // behavior
+
     public int getSpeed() {
         return speed;
     }

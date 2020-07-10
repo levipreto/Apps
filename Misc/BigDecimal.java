@@ -1,4 +1,5 @@
 //HOW TO USE BIG DECIMAL
+package Misc;
 
 public class BigDecimal {
     

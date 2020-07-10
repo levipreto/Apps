@@ -1,4 +1,4 @@
-package SimpleInterestCalc;
+package Misc.SimpleInterestCalc;
 
 import java.math.BigDecimal;
 

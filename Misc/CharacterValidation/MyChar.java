@@ -1,3 +1,5 @@
+package Misc.CharacterValidation;
+
 public class MyChar {
 
     private char ch;

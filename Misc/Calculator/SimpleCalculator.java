@@ -1,4 +1,4 @@
-package Misc.MenuMathOperation;
+package Misc.Calculator;
 
 import java.util.Scanner;
 import java.math.BigDecimal;

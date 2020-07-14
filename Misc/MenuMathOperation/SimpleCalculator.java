@@ -32,6 +32,8 @@ public class SimpleCalculator {
 
         // performOperationUsingNestedElse(number1, number2, choice);
         performOperationUsingSwitch(number1, number2, choice);
+
+        scanner.close();
     }
 
     private static void namingOperation(int choice) {

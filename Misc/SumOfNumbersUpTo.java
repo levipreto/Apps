@@ -1,3 +1,5 @@
+package Misc;
+
 public class SumOfNumbersUpTo {
     
     public static void main(String[] args) {

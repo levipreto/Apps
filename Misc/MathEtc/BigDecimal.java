@@ -1,5 +1,5 @@
 //HOW TO USE BIG DECIMAL
-package Misc;
+package Misc.MathEtc;
 
 public class BigDecimal {
     

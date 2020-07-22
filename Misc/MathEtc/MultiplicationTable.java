@@ -1,4 +1,4 @@
-package Misc;
+package Misc.MathEtc;
 
 public class MultiplicationTable {
 

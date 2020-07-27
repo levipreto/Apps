@@ -5,10 +5,8 @@ import java.math.BigDecimal;
 public class StudentRunner {
     
     public static void main(String[] args) {
-
-        int[] marks = { 99, 98, 100 };
         
-        Student student = new Student("Student1", marks);
+        Student student = new Student("Student1", 97, 98, 100);
 
         int number = student.getNumberOfMarks();
         System.out.println("Number of marks: " + number);
@@ -24,5 +22,13 @@ public class StudentRunner {
 
         BigDecimal average = student.getAverageMarks();
         System.out.println("The average mark is: " + average);
+
+        student.addNewMark(35);
+
+        System.out.println(student);
+
+        student.removeMarkAtIndex(1);
+        
+        System.out.println(student);
     }
 }

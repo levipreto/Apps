@@ -2,37 +2,57 @@ package Misc.Arrays;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Student {
     
     private String name;
-    private int[] marks;
+    private ArrayList<Integer> marks = new ArrayList<Integer>();
 
-    Student(String name, int[] marks) {
-        this.name = name;
-        this.marks = marks;
+    Student(String name, int... marks) {
+		this.name = name;
+
+		for(int mark: marks) {
+			this.marks.add(mark);
+		}
     }
 
 	public int getNumberOfMarks() {
-        return marks.length;
+        return marks.size();
 	}
 
 	public int getTotalSumOfMarks() {
-        return Arrays.stream(marks).sum();
+		int sum = 0;
+		for(int mark : marks) {
+			sum += mark;
+		}
+		return sum;
 	}
 
 	public int getMaximumMark() {
-		return Arrays.stream(marks).max().getAsInt();
+		return Collections.max(marks);
 	}
 
 	public int getMinimumMark() {
-		return Arrays.stream(marks).min().getAsInt();
+		return Collections.min(marks);
 	}
 
 	public BigDecimal getAverageMarks() {
         BigDecimal sumOfMarks = new BigDecimal(getTotalSumOfMarks());
         BigDecimal numberOfMarks = new BigDecimal(getNumberOfMarks());
         return(sumOfMarks.divide(numberOfMarks, MathContext.DECIMAL128));
+	}
+
+	public String toString() {
+		return name + marks;
+	}
+
+	public void addNewMark(int mark) {
+		marks.add(mark);
+	}
+
+	public void removeMarkAtIndex(int index) {
+		marks.remove(index);
 	}
 }

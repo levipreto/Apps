@@ -3,8 +3,8 @@ package Misc.AdvancedOOP.Inheritance.src;
 public class StudentRunner {
     
     public static void main(String[] args) {
-        Student student = new Student();
-        student.setName("Student1");
+        Student student = new Student("Chris", "USP College");
+        //student.setName("Student1");
         student.setEmail("student1@gmail.com");
         
         /*
@@ -17,8 +17,8 @@ public class StudentRunner {
         System.out.println(person);
         */
 
-        Employee employee = new Employee();
-        employee.setName("Student1");
+        Employee employee = new Employee("Chris", "Analyst");
+        //employee.setName("Student1");
         employee.setEmail("student1@gmail.com");
         employee.setPhoneNumber("123-456-7890");
         employee.setEmployeeGrade('A');

@@ -1,4 +1,4 @@
-package Misc.Examples.Flyable;
+package Misc.Examples.Flyable.src;
 
 interface Flyable {
     void fly();

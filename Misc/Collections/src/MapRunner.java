@@ -26,7 +26,7 @@ public class MapRunner {
         // STRING
         Map<String, Integer> stringOccurances = new HashMap<>();
 
-        String noDotStr = str.replace('.', ' ');
+        String noDotStr = str.replace('.', ' '); // removing dots from the strings
 
         String[] words = noDotStr.split(" ");
 

@@ -19,7 +19,9 @@ public class FinallyRunner {
             e.printStackTrace();
         } finally {
             System.out.println("Before Scanner Close");
-            scanner.close();
+            if(scanner != null) {
+                scanner.close();
+            }
         }
 
         System.out.println("Just before closing out main");

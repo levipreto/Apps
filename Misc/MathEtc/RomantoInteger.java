@@ -21,7 +21,7 @@ public class RomantoInteger {
         return -1;
     }
 
-    int RomantoInteger(String str) {
+    int romanToInteger(String str) {
 
         int res = 0;
 
@@ -52,6 +52,6 @@ public class RomantoInteger {
         RomantoInteger ob = new RomantoInteger();
 
         String str = "MCMIV";
-        System.out.println("Integer form of Roman numeral " + "is " + ob.RomantoInteger(str));
+        System.out.println("Integer form of Roman numeral " + "is " + ob.romanToInteger(str));
     }
 }

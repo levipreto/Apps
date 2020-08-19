@@ -1,4 +1,4 @@
-package Misc.Files.src;
+package Misc.Files.src.files;
 
 import java.io.IOException;
 import java.nio.file.Files;

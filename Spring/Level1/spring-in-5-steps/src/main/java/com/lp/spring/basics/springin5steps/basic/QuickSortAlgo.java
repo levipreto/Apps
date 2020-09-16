@@ -1,10 +1,10 @@
-package com.lp.spring.basics.springin5steps;
+package com.lp.spring.basics.springin5steps.basic;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@Qualifier("quick")
 public class QuickSortAlgo implements SortAlgorithm {
     public int[] sort(int[] numbers) {
         // Logic for quick sort
